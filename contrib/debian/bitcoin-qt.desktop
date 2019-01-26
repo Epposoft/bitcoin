@@ -1,13 +1,13 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Bitcoin Core
-Comment=Connect to the Bitcoin P2P Network
-Comment[de]=Verbinde mit dem Bitcoin peer-to-peer Netzwerk
-Comment[fr]=Bitcoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Bitcoin, eşten eşe kriptografik sanal para birimi
-Exec=bitcoin-qt %u
+Name=EPPO Core
+Comment=Connect to the EPPO P2P Network
+Comment[de]=Verbinde mit dem EPPO peer-to-peer Netzwerk
+Comment[fr]=EPPO, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=EPPO, eşten eşe kriptografik sanal para birimi
+Exec=EPPO-qt %u
 Terminal=false
 Type=Application
-Icon=bitcoin128
-MimeType=x-scheme-handler/bitcoin;
+Icon=EPPO128
+MimeType=x-scheme-handler/EPPO;
 Categories=Office;Finance;

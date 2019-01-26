@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2016 The EPPO Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_UNDO_H
-#define BITCOIN_UNDO_H
+#ifndef EPPO_UNDO_H
+#define EPPO_UNDO_H
 
 #include "compressor.h" 
 #include "primitives/transaction.h"
@@ -76,4 +76,4 @@ public:
     }
 };
 
-#endif // BITCOIN_UNDO_H
+#endif // EPPO_UNDO_H

@@ -1,36 +1,36 @@
 #!/bin/bash
 #
-#  bitcoind The bitcoin core server.
+#  EPPOd The EPPO core server.
 #
 #
 # chkconfig: 345 80 20
-# description: bitcoind
-# processname: bitcoind
+# description: EPPOd
+# processname: EPPOd
 #
 
 # Source function library.
 . /etc/init.d/functions
 
-# you can override defaults in /etc/sysconfig/bitcoind, see below
-if [ -f /etc/sysconfig/bitcoind ]; then
-        . /etc/sysconfig/bitcoind
+# you can override defaults in /etc/sysconfig/EPPOd, see below
+if [ -f /etc/sysconfig/EPPOd ]; then
+        . /etc/sysconfig/EPPOd
 fi
 
 RETVAL=0
 
-prog=bitcoind
-# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/bitcoind
-lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/bitcoind}
+prog=EPPOd
+# you can override the lockfile via EPPOD_LOCKFILE in /etc/sysconfig/EPPOd
+lockfile=${EPPOD_LOCKFILE-/var/lock/subsys/EPPOd}
 
-# bitcoind defaults to /usr/bin/bitcoind, override with BITCOIND_BIN
-bitcoind=${BITCOIND_BIN-/usr/bin/bitcoind}
+# EPPOd defaults to /usr/bin/EPPOd, override with EPPOD_BIN
+EPPOd=${EPPOD_BIN-/usr/bin/EPPOd}
 
-# bitcoind opts default to -disablewallet, override with BITCOIND_OPTS
-bitcoind_opts=${BITCOIND_OPTS--disablewallet}
+# EPPOd opts default to -disablewallet, override with EPPOD_OPTS
+EPPOd_opts=${EPPOD_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $bitcoind $bitcoind_opts
+    daemon $DAEMONOPTS $EPPOd $EPPOd_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile

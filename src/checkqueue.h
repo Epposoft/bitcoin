@@ -1,9 +1,9 @@
-// Copyright (c) 2012-2015 The Bitcoin Core developers
+// Copyright (c) 2012-2015 The EPPO Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_CHECKQUEUE_H
-#define BITCOIN_CHECKQUEUE_H
+#ifndef EPPO_CHECKQUEUE_H
+#define EPPO_CHECKQUEUE_H
 
 #include <algorithm>
 #include <vector>
@@ -214,4 +214,4 @@ public:
     }
 };
 
-#endif // BITCOIN_CHECKQUEUE_H
+#endif // EPPO_CHECKQUEUE_H
